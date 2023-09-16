@@ -5,7 +5,7 @@ figure_generator.generateFigure(angle_generator.angles["start"], angle_generator
 all_buttons = document.querySelectorAll('.keyboard_button')
 let angle_keyboard = new AngleKeyboard(all_buttons)
 
-let date = localStorage.getItem('dateDerniereAction');
+let date = localStorage.getItem('last_game');
 if (date === new Date().toDateString()) {
     score_difference = localStorage.getItem('last_score')
     if (!isNaN(score_difference)) {

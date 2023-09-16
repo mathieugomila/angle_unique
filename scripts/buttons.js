@@ -74,7 +74,7 @@ class ResultOverlay {
                 const then = new Date("2023-09-16T00:00:00+02:00");
                 const diffInMs = now - then;
                 const day = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
-                let text_to_copy = `#AngleUnique jour n°${day}\n\nEcart: ${score_difference}°\n\nhttps://angle.pheargame.net`
+                let text_to_copy = `#AngleUnique jour n°${day}\n\nEcart: ${score_difference}°\n\nhttps://mathieugomila.github.io/angle_unique/`
                 await navigator.clipboard.writeText(text_to_copy);
                 document.getElementById("overlay_result_share_button").firstChild.nodeValue = `Score copié dans le presse-papier !`;
             } catch (err) {
@@ -91,7 +91,7 @@ class ResultOverlay {
         const now = new Date();
         const then = new Date("2023-09-16T00:00:00+02:00");
         const diffInMs = now - then;
-        const day = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+        const day = Math.floor(diffInMs / (1000 * 60 * 60 * 24)) + 1;
         document.getElementById("overlay_result_text").innerHTML = `Jour n°${day}<br><br>Réponse attendue: ${angle_generator.angle_answer}<br><br>Ecart: ${score_difference}°`
         this.get_clipboard_message()
         localStorage.setItem('last_game', new Date().toDateString());

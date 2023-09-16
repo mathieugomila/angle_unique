@@ -1,0 +1,85 @@
+/* Style général */
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(223, 231, 179);
+}
+
+.figure_box {
+  width: 100%;
+  height: 40vh; /* 40% de la hauteur de l'écran */
+  width: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mySvg {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.result_box {
+  width: 100%;
+  height: 10vh;
+  width: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px;
+}
+.result_text {
+  font-size: 72px;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.keyboard_box {
+  width: 40vh;
+  height: 40vh;
+}
+
+.keyboard_grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 30%);
+  gap: 5%;
+  padding: 5%;
+}
+
+.keyboard_button {
+  padding-bottom: 100%; /* Aspect ratio 1:1 */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+  aspect-ratio: 1 / 1; /*Pour un aspect carré */
+  font-size: 36px;
+}
+
+/*Style mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .figure_box {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .result_box {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .keyboard_box {
+    width: auto;
+    margin: 0 auto;
+  }
+}

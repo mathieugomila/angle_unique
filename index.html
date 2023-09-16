@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Angle</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="figure_box">
+        <svg id="mySvg" viewBox="-50 -50 100 100">
+          <line id="line1" x1="0" y1="0" x2="50" y2="0" stroke="black" />
+          <line id="line2" x1="0" y1="0" x2="30.6" y2="50" stroke="black" />
+          <path
+            id="bow"
+            d="M 50 0 A 50 50 0 0 1 30 50"
+            stroke="black"
+            fill="none"
+          />
+        </svg>
+      </div>
+      <div class="result_box">
+        <div class="result_text" id="result_text">127°</div>
+      </div>
+      <div class="keyboard_box">
+        <div class="keyboard_grid">
+          <button class="keyboard_button">1</button>
+          <button class="keyboard_button">2</button>
+          <button class="keyboard_button">3</button>
+          <button class="keyboard_button">4</button>
+          <button class="keyboard_button">5</button>
+          <button class="keyboard_button">6</button>
+          <button class="keyboard_button">7</button>
+          <button class="keyboard_button">8</button>
+          <button class="keyboard_button">9</button>
+          <button class="keyboard_button">X</button>
+          <button class="keyboard_button">0</button>
+          <button class="keyboard_button">✓</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/figure.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

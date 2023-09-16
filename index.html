@@ -2,25 +2,39 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Angle</title>
+    <title>Angle unique</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <div class="overlay_result_container" id="overlay_result_container">
+      <div class="overlay_result_box">
+        <div class="overlay_result_text" id="overlay_result_text">
+          Ecart avec la réponse attendue : plouf
+        </div>
+        <button
+          class="overlay_result_share_button"
+          id="overlay_result_share_button"
+        >
+          Clicker pour partager
+        </button>
+      </div>
+    </div>
     <div class="container">
       <div class="figure_box">
         <svg id="mySvg" viewBox="-50 -50 100 100">
-          <line id="line1" x1="0" y1="0" x2="50" y2="0" stroke="black" />
-          <line id="line2" x1="0" y1="0" x2="30.6" y2="50" stroke="black" />
+          <line id="line1" x1="0" y1="0" x2="50" y2="0" stroke="orange" />
+          <line id="line2" x1="0" y1="0" x2="30.6" y2="50" stroke="orange" />
           <path
             id="bow"
             d="M 50 0 A 50 50 0 0 1 30 50"
-            stroke="black"
+            stroke="red"
             fill="none"
           />
         </svg>
       </div>
       <div class="result_box">
-        <div class="result_text" id="result_text">127°</div>
+        <div class="result_text" id="result_text">...</div>
       </div>
       <div class="keyboard_box">
         <div class="keyboard_grid">

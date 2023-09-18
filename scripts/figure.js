@@ -7,7 +7,11 @@ class AngleGenerator {
 
         this.angles = this.generateRandomValues(day, month, year)
         this.angle_answer = this.angles["end"] - this.angles["start"]
-    }
+    
+        if (this.angle_answer <= 0){
+             this.angle_answer += 360
+        }
+}
 
 
 
